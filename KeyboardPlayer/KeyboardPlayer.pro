@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui multimedia svg
+QT       += core gui multimedia svg multimediawidgets
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -13,17 +13,31 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        keyboarplayer.cpp \
     pianoscene.cpp \
     pianokey.cpp \
-    pianokeyboard.cpp
+    pianokeyboard.cpp \
+    videoplayer.cpp \
+    imageviewer.cpp \
+    videowidget.cpp \
+    playlistmodel.cpp \
+    videoplayercontrols.cpp \
+    keyboardplayer.cpp
 
-HEADERS  += keyboarplayer.h \
+HEADERS  += \
     pianoscene.h \
     pianokey.h \
-    pianokeyboard.h
+    pianokeyboard.h \
+    videoplayer.h \
+    imageviewer.h \
+    videowidget.h \
+    playlistmodel.h \
+    videoplayercontrols.h \
+    keyboardplayer.h
 
-FORMS    += keyboarplayer.ui
+FORMS    += \
+    videoplayer.ui \
+    imageviewer.ui \
+    keyboardplayer.ui
 
 RESOURCES += \
     kp.qrc

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>KeyBoarPlayer</class>
- <widget class="QMainWindow" name="KeyBoarPlayer">
+ <class>keyboardPlayer</class>
+ <widget class="QMainWindow" name="keyboardPlayer">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -13,64 +13,75 @@
   <property name="windowTitle">
    <string>KeyBoarPlayer</string>
   </property>
-  <widget class="QWidget" name="centralWidget">
+  <widget class="QWidget" name="mcentralWidget">
    <widget class="PianoKeyboard" name="pianokeybd">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>421</y>
-      <width>941</width>
-      <height>121</height>
+      <x>10</x>
+      <y>137</y>
+      <width>256</width>
+      <height>192</height>
      </rect>
     </property>
    </widget>
-   <widget class="QGroupBox" name="groupBox">
+   <widget class="QGroupBox" name="controllerBox">
     <property name="geometry">
      <rect>
-      <x>60</x>
-      <y>240</y>
-      <width>261</width>
-      <height>100</height>
+      <x>10</x>
+      <y>10</y>
+      <width>130</width>
+      <height>121</height>
      </rect>
     </property>
     <property name="title">
      <string>Controller</string>
     </property>
-    <layout class="QVBoxLayout" name="verticalLayout">
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_2">
-       <item>
-        <widget class="QLabel" name="label">
-         <property name="text">
-          <string>Transpose</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QSpinBox" name="spinBox"/>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout">
-       <item>
-        <widget class="QLabel" name="label_2">
-         <property name="text">
-          <string>Octave</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QSpinBox" name="spinBox_2"/>
-       </item>
-      </layout>
-     </item>
-    </layout>
-    <zorder>pianokeybd</zorder>
-    <zorder>spinBox</zorder>
-    <zorder>label</zorder>
-    <zorder>label_2</zorder>
-    <zorder>spinBox_2</zorder>
+    <widget class="QSpinBox" name="spinBox">
+     <property name="geometry">
+      <rect>
+       <x>72</x>
+       <y>49</y>
+       <width>48</width>
+       <height>27</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>18</x>
+       <y>26</y>
+       <width>70</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Transpose</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>18</x>
+       <y>82</y>
+       <width>48</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Octave</string>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="spinBox_2">
+     <property name="geometry">
+      <rect>
+       <x>72</x>
+       <y>82</y>
+       <width>48</width>
+       <height>27</height>
+      </rect>
+     </property>
+    </widget>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
